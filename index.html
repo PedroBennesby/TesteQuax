@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show de Verão - Skol</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Biblioteca de animações "animate.css" -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css"
+    />
+    <!-- Biblioteca "WOW Js" -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  </head>
+  <body>
+    <!-- Início do site e atrações -->
+    <div class="container-topo">
+      <div class="fundo"></div>
+    </div>
+
+    <!-- Script wow Js -->
+    <script>
+      wow = new WOW({
+        boxclass: "wow",
+        animateClass: "animated",
+        offset: 0,
+        mobile: true,
+        live: true,
+      });
+      wow.init();
+    </script>
+  </body>
+</html>
