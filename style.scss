@@ -1,3 +1,13 @@
+@font-face {
+  font-family: AmsiPro;
+  src: url(contents/FontsFree-Net-AmsiPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: AmsiProCond;
+  src: url(contents/FontsFree-Net-AmsiProCond-Black.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,16 +26,6 @@
   width: 100%;
   height: auto;
   display: flex;
-}
-
-.bg:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  bottom: 1px;
-  z-index: -1;
-  transform: scale(0.9);
-  box-shadow: 0px 0px 8px 2px #000000;
 }
 
 .logos {
@@ -138,3 +138,85 @@
     width: 130%;
   }
 }
+
+// Sobre
+
+.container-sobre {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texto-botao {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  margin: 0.5rem 0 1rem 0;
+  font-size: 2rem;
+  font-family: "AmsiProCond";
+  color: #414042;
+}
+
+.sobre {
+  text-align: left;
+  font-size: 1rem;
+  font-family: "AmsiPro";
+  color: #414042;
+}
+
+.logo-sobre {
+  width: 100%;
+}
+
+.button-sobre {
+  margin: 1rem 0 1rem 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container-sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "texto-botao logo";
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titulo {
+    font-size: 6rem;
+  }
+
+  .sobre {
+    font-size: 2rem;
+  }
+
+  .texto-botao {
+    grid-area: texto-botao;
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .logo-sobre {
+    grid-area: logo;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .logo-sobre {
+    width: 40%;
+    margin-left: 20rem;
+  }
+
+  .texto-botao {
+    margin-left: 10rem;
+  }
+}
+
+// localização
