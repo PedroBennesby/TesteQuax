@@ -113,6 +113,10 @@
   width: 80%;
 }
 
+.button:hover {
+  opacity: 0.6;
+}
+
 .icones {
   position: absolute;
   display: -webkit-box;
@@ -199,7 +203,7 @@
 
 .titulo {
   margin: 0.5rem 0 1rem 0;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "AmsiProCond";
   color: #414042;
 }
@@ -212,11 +216,16 @@
 }
 
 .logo-sobre {
-  width: 100%;
+  width: 60%;
+  margin-bottom: 1rem;
 }
 
 .button-sobre {
   margin: 1rem 0 1rem 0;
+}
+
+.button-sobre:hover {
+  opacity: 0.6;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -250,7 +259,8 @@
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: logo;
-    width: 80%;
+    width: 70%;
+    margin-left: 6rem;
   }
 }
 
@@ -261,6 +271,113 @@
   }
   .texto-botao {
     margin-left: 10rem;
+  }
+}
+
+.localizacao {
+  background-color: #1a6eab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ponto {
+  width: 5%;
+}
+
+.frase {
+  color: #fff;
+  font-family: "AmsiProCond";
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .ponto {
+    width: 3%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .ponto {
+    width: 1.4%;
+  }
+}
+
+.mapa {
+  width: 100%;
+}
+
+.patrocinadores {
+  width: 100%;
+}
+
+.container-footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-bg {
+  width: 100%;
+}
+
+.icones-sociais {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 2rem;
+  width: 20%;
+}
+
+.sociais {
+  width: 60%;
+}
+
+.sociais:hover {
+  opacity: 0.6;
+}
+
+@media only screen and (min-width: 1200px) {
+  .icones-sociais {
+    width: 20%;
+    right: 4rem;
+  }
+  .sociais {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .icones-sociais {
+    width: 10%;
+    right: 16rem;
+  }
+  .sociais {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
