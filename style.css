@@ -4,4 +4,168 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.fundo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.bg {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bg:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 1px;
+  z-index: -1;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 0px 0px 8px 2px #000000;
+          box-shadow: 0px 0px 8px 2px #000000;
+}
+
+.logos {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+}
+
+.feijoada {
+  width: 15%;
+}
+
+.rock {
+  width: 15%;
+}
+
+.skol {
+  width: 15%;
+}
+
+.peixada {
+  width: 15%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .logos {
+    width: 100%;
+  }
+  .feijoada {
+    width: 15%;
+  }
+  .rock {
+    width: 15%;
+  }
+  .skol {
+    width: 15%;
+  }
+  .peixada {
+    width: 15%;
+  }
+}
+
+.container-mapas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  aspect-ratio: 100 / 29;
+  background-color: #edd51a;
+}
+
+.icone-mapa {
+  width: 13%;
+  margin-bottom: 10px;
+}
+
+.button {
+  width: 80%;
+}
+
+.icones {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  top: 1rem;
+}
+
+.buttons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  bottom: 0;
+}
+
+@media only screen and (min-width: 900px) {
+  .icone-mapa {
+    width: 20%;
+  }
+  .button {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .icones {
+    width: 100%;
+  }
+  .icone-mapa {
+    width: 15%;
+  }
+  .buttons {
+    width: 100%;
+  }
+  .button {
+    width: 130%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
