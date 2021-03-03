@@ -100,7 +100,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  aspect-ratio: 100 / 29;
+  padding-top: 28%;;
   background-color: #edd51a;
 }
 
